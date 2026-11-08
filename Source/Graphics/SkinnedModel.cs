@@ -163,7 +163,7 @@ public class SkinnedModel : Model
 		{
 			var it = playing[i];
 
-			it.Time += Rate * time.Delta;
+			it.Time += Rate * time.Delta * time.Delta;
 			if (it.Time >= it.Duration)
 			{
 				if (it.Loops)
